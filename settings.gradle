@@ -1,0 +1,4 @@
+include ':library-components'
+include ':library'
+include ':app'
+rootProject.name = "android-ImmersionBar"
