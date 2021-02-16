@@ -7,7 +7,7 @@ android {
     buildToolsVersion setup.buildTools
 
     defaultConfig {
-        "cc.brainbook.android.immersionbar.app"
+        applicationId "cc.brainbook.android.immersionbar.app"
 
         minSdkVersion setup.minSdk
         targetSdkVersion setup.targetSdk
@@ -23,6 +23,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
