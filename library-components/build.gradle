@@ -7,14 +7,14 @@ apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.yongtiger'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion setup.compileSdk
+    buildToolsVersion setup.buildTools
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion setup.minSdk
+        targetSdkVersion setup.targetSdk
+        versionCode release.versionCode
+        versionName release.versionName
 
         consumerProguardFiles "consumer-rules.pro"
     }
